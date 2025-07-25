@@ -67,7 +67,7 @@ public class Meal {
 
         switch(this.mealType)
         {
-            case "preworkout": if(this.carbs<=25) {
+            case "preworkout": if(this.carbs<=22) {
                 System.out.println("This meal sucks chief");
             } else System.out.println("This meal is it chief.");
             case "postworkout": if(this.protein<=30){
