@@ -16,6 +16,14 @@ public class Meal {
         this.mealType=mealType;
     }
 
+    public String getMealType() {
+        return mealType;
+    }
+
+    public void setMealType(String mealType) {
+        this.mealType = mealType;
+    }
+
     public String getName() {
         return name;
     }
