@@ -55,4 +55,23 @@ public class Meal {
     public void setFats(int fats) {
         this.fats = fats;
     }
+    public void checkMealQuality(){
+
+        switch(this.mealType)
+        {
+            case "preworkout": if(this.carbs<=25) {
+                System.out.println("This meal sucks chief");
+            } else System.out.println("This meal is it chief.");
+            case "postworkout": if(this.protein<=30){
+                System.out.println("This aint how we get big chief.");
+            } else System.out.println("This is it chief we gettin big.");
+            case "anabolic": if(this.protein<40){
+                System.out.println("You call this ANABOLIC? Stay small I guess.");
+            } else System.out.println("We gettin' big gang h*ll yeah.");
+            case "cheat":
+                System.out.println("Did your mamma raise a b*tch?");
+            default:
+                throw new IllegalStateException("Unexpected value: " + this.mealType);
+        }
+    }
 }
